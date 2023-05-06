@@ -1,4 +1,5 @@
-﻿namespace BlDay5Problems{
+﻿using System;
+namespace BlDay5Problems{
     class Program{
         void FlipCoin(int flips){
             Random rnd=new Random();
@@ -54,6 +55,12 @@
             a=a-b;
             Console.WriteLine("After a and b: "+a+" "+b);
         }
+        void OddEven(int n){
+            if(n%2==0)
+                Console.WriteLine("Even");
+            else
+                Console.WriteLine("Odd");
+        }
         public static void Main(string [] args){
             Program obj=new Program();
             Console.Write("Enter number: ");
@@ -68,9 +75,11 @@
             // int a=Convert.ToInt32(Console.ReadLine());
             // obj.FQR(n,a);
 
-            Console.Write("Enter another number: ");
-            int a=Convert.ToInt32(Console.ReadLine());
-            obj.Swap(n,a);
+            // Console.Write("Enter another number: ");
+            // int a=Convert.ToInt32(Console.ReadLine());
+            // obj.Swap(n,a);
+
+            obj.OddEven(n);
             
         }
     }

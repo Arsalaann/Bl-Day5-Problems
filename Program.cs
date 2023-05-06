@@ -14,6 +14,10 @@
             Console.WriteLine("Tails % = "+(tails*100/flips));
         }
         void LeapYear(int year){
+            if(year>9999){
+                Console.WriteLine("Invalid Year");
+                return;
+            }    
             if(year%4==0)
                 Console.WriteLine("Yes");
             else   
@@ -29,25 +33,27 @@
                 ans+=Convert.ToDouble(1)/Convert.ToDouble(i);
             Console.WriteLine(ans);
         }
+
+        void PrimeFactors(int n){
+            for(int i=2;i<n;i++){
+                int j=2;
+                for(;j<i;j++)
+                    if(i%j==0)
+                        break;
+                if(j==i && n%i==0)
+                    Console.WriteLine(i);
+            }
+        }
         public static void Main(string [] args){
             Program obj=new Program();
-            // Console.Write("Enter number of flips: ");
-            // int flips=Convert.ToInt32(Console.ReadLine());
-            // obj.FlipCoin(flips);
-
-            // int year=Convert.ToInt32(Console.ReadLine());;
-            // if(year>9999)
-            //     Console.WriteLine("Invalid year");
-            // else
-            //     obj.LeapYear(year);
-
-            // Console.Write("Enter a number less than 32: ");
-            // int n=Convert.ToInt32(Console.ReadLine());
-            // obj.PowerofTwo(n);
-
-            Console.Write("Enter a number: ");
+            Console.Write("Enter number: ");
             int n=Convert.ToInt32(Console.ReadLine());
-            obj.HarmonicNumber(n);
+            // obj.FlipCoin(flips);
+            // obj.LeapYear(year);
+            // obj.PowerofTwo(n);
+            // obj.HarmonicNumber(n);
+            obj.PrimeFactors(n);
+            
         }
     }
 }

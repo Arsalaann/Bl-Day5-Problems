@@ -23,6 +23,12 @@
             for(int i=1;i<=n && i<32;i++)
                 Console.WriteLine(Math.Pow(Convert.ToDouble(2),Convert.ToDouble(i)));
         }
+        void HarmonicNumber(int n){
+            double ans=0;
+            for(int i=1;i<=n;i++)
+                ans+=Convert.ToDouble(1)/Convert.ToDouble(i);
+            Console.WriteLine(ans);
+        }
         public static void Main(string [] args){
             Program obj=new Program();
             // Console.Write("Enter number of flips: ");
@@ -34,9 +40,14 @@
             //     Console.WriteLine("Invalid year");
             // else
             //     obj.LeapYear(year);
-            Console.Write("Enter a number less than 32: ");
+
+            // Console.Write("Enter a number less than 32: ");
+            // int n=Convert.ToInt32(Console.ReadLine());
+            // obj.PowerofTwo(n);
+
+            Console.Write("Enter a number: ");
             int n=Convert.ToInt32(Console.ReadLine());
-            obj.PowerofTwo(n);
+            obj.HarmonicNumber(n);
         }
     }
 }

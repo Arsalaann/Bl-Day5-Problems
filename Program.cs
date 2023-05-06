@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Text.RegularExpressions;
+using System;
 namespace BlDay5Problems{
     class Program{
         void FlipCoin(int flips){
@@ -69,8 +70,8 @@ namespace BlDay5Problems{
         }
         public static void Main(string [] args){
             Program obj=new Program();
-            //Console.Write("Enter number: ");
-            //int n=Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter number: ");
+            int n=Convert.ToInt32(Console.ReadLine());
             // obj.FlipCoin(flips);
             // obj.LeapYear(year);
             // obj.PowerofTwo(n);
@@ -81,14 +82,20 @@ namespace BlDay5Problems{
             // int a=Convert.ToInt32(Console.ReadLine());
             // obj.FQR(n,a);
 
-            // Console.Write("Enter another number: ");
-            // int a=Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter another number: ");
+            int a=Convert.ToInt32(Console.ReadLine());
             // obj.Swap(n,a);
 
-            // obj.OddEven(n);\
-            Console.Write("Enter Character: ");
-            char c=Convert.ToChar(Console.ReadLine());;
-            obj.VowelOrConsonent(c);
+            // obj.OddEven(n);
+
+            // Console.Write("Enter Character: ");
+            // char c=Convert.ToChar(Console.ReadLine());;
+            // obj.VowelOrConsonent(c);
+
+            Console.Write("Enter third number: ");
+            int b=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Biggest is: "+Math.Max(Math.Max(a,b),n));
+
         }
     }
 }

@@ -1,0 +1,15 @@
+/home/luser/pgming/Bl-Day5-Problems/bin/Debug/net6.0/Bl-Day5-Problems
+/home/luser/pgming/Bl-Day5-Problems/bin/Debug/net6.0/Bl-Day5-Problems.deps.json
+/home/luser/pgming/Bl-Day5-Problems/bin/Debug/net6.0/Bl-Day5-Problems.runtimeconfig.json
+/home/luser/pgming/Bl-Day5-Problems/bin/Debug/net6.0/Bl-Day5-Problems.dll
+/home/luser/pgming/Bl-Day5-Problems/bin/Debug/net6.0/ref/Bl-Day5-Problems.dll
+/home/luser/pgming/Bl-Day5-Problems/bin/Debug/net6.0/Bl-Day5-Problems.pdb
+/home/luser/pgming/Bl-Day5-Problems/obj/Debug/net6.0/Bl-Day5-Problems.csproj.AssemblyReference.cache
+/home/luser/pgming/Bl-Day5-Problems/obj/Debug/net6.0/Bl-Day5-Problems.GeneratedMSBuildEditorConfig.editorconfig
+/home/luser/pgming/Bl-Day5-Problems/obj/Debug/net6.0/Bl-Day5-Problems.AssemblyInfoInputs.cache
+/home/luser/pgming/Bl-Day5-Problems/obj/Debug/net6.0/Bl-Day5-Problems.AssemblyInfo.cs
+/home/luser/pgming/Bl-Day5-Problems/obj/Debug/net6.0/Bl-Day5-Problems.csproj.CoreCompileInputs.cache
+/home/luser/pgming/Bl-Day5-Problems/obj/Debug/net6.0/Bl-Day5-Problems.dll
+/home/luser/pgming/Bl-Day5-Problems/obj/Debug/net6.0/ref/Bl-Day5-Problems.dll
+/home/luser/pgming/Bl-Day5-Problems/obj/Debug/net6.0/Bl-Day5-Problems.pdb
+/home/luser/pgming/Bl-Day5-Problems/obj/Debug/net6.0/Bl-Day5-Problems.genruntimeconfig.cache

@@ -13,11 +13,22 @@
             Console.WriteLine("Heads % = "+(heads*100/flips));
             Console.WriteLine("Tails % = "+(tails*100/flips));
         }
+        void LeapYear(int year){
+            if(year%4==0)
+                Console.WriteLine("Yes");
+            else   
+                Console.WriteLine("No");
+        }
         public static void Main(string [] args){
             Program obj=new Program();
-            Console.Write("Enter number of flips: ");
-            int flips=Convert.ToInt32(Console.ReadLine());
-            obj.FlipCoin(flips);
+            // Console.Write("Enter number of flips: ");
+            // int flips=Convert.ToInt32(Console.ReadLine());
+            // obj.FlipCoin(flips);
+            int year=Convert.ToInt32(Console.ReadLine());;
+            if(year>9999)
+                Console.WriteLine("Invalid year");
+            else
+                obj.LeapYear(year);
         }
     }
 }

@@ -47,6 +47,13 @@
         void FQR(int n,int a){
             Console.WriteLine("Quotient = "+(n/a)+"\nRemainder = "+(n%a));
         }
+        void Swap(int a,int b){
+            Console.WriteLine("Before a and b: "+a+" "+b);
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            Console.WriteLine("After a and b: "+a+" "+b);
+        }
         public static void Main(string [] args){
             Program obj=new Program();
             Console.Write("Enter number: ");
@@ -56,9 +63,14 @@
             // obj.PowerofTwo(n);
             // obj.HarmonicNumber(n);
             // obj.PrimeFactors(n);
-            Console.Write("Enter Divisor: ");
+
+            // Console.Write("Enter Divisor: ");
+            // int a=Convert.ToInt32(Console.ReadLine());
+            // obj.FQR(n,a);
+
+            Console.Write("Enter another number: ");
             int a=Convert.ToInt32(Console.ReadLine());
-            obj.FQR(n,a);
+            obj.Swap(n,a);
             
         }
     }

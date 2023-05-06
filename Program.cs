@@ -61,10 +61,16 @@ namespace BlDay5Problems{
             else
                 Console.WriteLine("Odd");
         }
+        void VowelOrConsonent(char c){
+            if(c=='A' || c=='E' || c=='I' || c=='O' || c=='U' || c=='a' || c=='e' || c=='i' || c=='o' || c=='u')
+                Console.WriteLine("Vowel");
+            else
+                Console.WriteLine("Consonent");
+        }
         public static void Main(string [] args){
             Program obj=new Program();
-            Console.Write("Enter number: ");
-            int n=Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter number: ");
+            //int n=Convert.ToInt32(Console.ReadLine());
             // obj.FlipCoin(flips);
             // obj.LeapYear(year);
             // obj.PowerofTwo(n);
@@ -79,8 +85,10 @@ namespace BlDay5Problems{
             // int a=Convert.ToInt32(Console.ReadLine());
             // obj.Swap(n,a);
 
-            obj.OddEven(n);
-            
+            // obj.OddEven(n);\
+            Console.Write("Enter Character: ");
+            char c=Convert.ToChar(Console.ReadLine());;
+            obj.VowelOrConsonent(c);
         }
     }
 }

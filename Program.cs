@@ -44,6 +44,9 @@
                     Console.WriteLine(i);
             }
         }
+        void FQR(int n,int a){
+            Console.WriteLine("Quotient = "+(n/a)+"\nRemainder = "+(n%a));
+        }
         public static void Main(string [] args){
             Program obj=new Program();
             Console.Write("Enter number: ");
@@ -52,7 +55,10 @@
             // obj.LeapYear(year);
             // obj.PowerofTwo(n);
             // obj.HarmonicNumber(n);
-            obj.PrimeFactors(n);
+            // obj.PrimeFactors(n);
+            Console.Write("Enter Divisor: ");
+            int a=Convert.ToInt32(Console.ReadLine());
+            obj.FQR(n,a);
             
         }
     }

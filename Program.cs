@@ -19,16 +19,24 @@
             else   
                 Console.WriteLine("No");
         }
+        void PowerofTwo(int n){
+            for(int i=1;i<=n && i<32;i++)
+                Console.WriteLine(Math.Pow(Convert.ToDouble(2),Convert.ToDouble(i)));
+        }
         public static void Main(string [] args){
             Program obj=new Program();
             // Console.Write("Enter number of flips: ");
             // int flips=Convert.ToInt32(Console.ReadLine());
             // obj.FlipCoin(flips);
-            int year=Convert.ToInt32(Console.ReadLine());;
-            if(year>9999)
-                Console.WriteLine("Invalid year");
-            else
-                obj.LeapYear(year);
+
+            // int year=Convert.ToInt32(Console.ReadLine());;
+            // if(year>9999)
+            //     Console.WriteLine("Invalid year");
+            // else
+            //     obj.LeapYear(year);
+            Console.Write("Enter a number less than 32: ");
+            int n=Convert.ToInt32(Console.ReadLine());
+            obj.PowerofTwo(n);
         }
     }
 }
